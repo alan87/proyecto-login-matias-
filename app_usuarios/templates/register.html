@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}	
+	REGISTER
+{% endblock %}
+
+{% block content %}	
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+        <button type="submit">Registrar</button>
+        <a href="{%url'registrar'%}">registrar</a>
+	</form>
+{% endblock %}
+
+{% block footer %}	
+{% endblock %}
+
+{% block js %}	
+{% endblock %}
